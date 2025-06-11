@@ -1,6 +1,22 @@
 {
+    "app.devhint": "voXplore is still in development!",
     "homeview.title": "Welcome to",
-    "homeview.desp.1": "eXplore",
+    "homeview.desp.1": "voXplore",
     "homeview.desp.3": "Developed by Jim Lin",
-    "homeview.button.enter": "Enter App"
+    "homeview.button.enter": "Enter App",
+    "account.legend.login": "Login to voXplore",
+    "account.legend.register": "Regist on voXplore",
+    "account.legend.forgot": "Forgot Password",
+    "account.username": "Username",
+    "account.email": "Email",
+    "account.password": "Password",
+    "account.button.login": "Login",
+    "account.button.register": "Register",
+    "account.button.forgot": "Recovery",
+    "account.goto.register": "New to voXplore?",
+    "account.button.goto.register": "Register now",
+    "account.goto.login": "Already have an account?",
+    "account.button.goto.login": "Login now",
+    "account.goto.forgot": "Forgot password?",
+    "account.button.goto.forgot": "Recovery now"
 }

@@ -1,6 +1,22 @@
 {
-    "homeview.title": "欢迎访问",
-    "homeview.desp.1": "探词 X",
+    "app.devhint": "voXplore 仍在开发中！",
+    "homeview.title": "欢迎来到",
+    "homeview.desp.1": "voXplore",
     "homeview.desp.3": "由 Jim Lin 开发",
-    "homeview.button.enter": "进入应用"
+    "homeview.button.enter": "进入应用",
+    "account.legend.login": "登录 voXplore",
+    "account.legend.register": "注册 voXplore",
+    "account.legend.forgot": "找回密码",
+    "account.username": "用户名",
+    "account.email": "邮箱",
+    "account.password": "密码",
+    "account.button.login": "登录",
+    "account.button.register": "注册",
+    "account.button.forgot": "发送找回邮件",
+    "account.goto.register": "从未注册 voXplore 账户？",
+    "account.button.goto.register": "立即注册",
+    "account.goto.login": "已有账户?",
+    "account.button.goto.login": "立即登录",
+    "account.goto.forgot": "忘记登录密码?",
+    "account.button.goto.forgot": "找回账户"
 }

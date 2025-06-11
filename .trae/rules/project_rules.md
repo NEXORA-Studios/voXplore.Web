@@ -1,6 +1,6 @@
 # Project Name
 
-eXplore
+voXplore
 
 # Project Target
 
@@ -12,9 +12,9 @@ To develop a web-based platform where students can collaboratively learn English
 
 # Dev Frameworks/Tools I Use
 
-- Vue
-- TypeScript
-- TailwindCSS
-- @iconify/tailwind4
-- @iconify-json/...
-- daisyui
+-   Vue
+-   TypeScript
+-   TailwindCSS
+-   @iconify/tailwind4
+-   @iconify-json/...
+-   daisyui
