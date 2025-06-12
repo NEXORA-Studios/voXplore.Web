@@ -18,5 +18,11 @@
     "account.goto.login": "已有账户?",
     "account.button.goto.login": "立即登录",
     "account.goto.forgot": "忘记登录密码?",
-    "account.button.goto.forgot": "找回账户"
+    "account.button.goto.forgot": "找回账户",
+    "login.error.empty": "用户名或密码不能为空",
+    "login.error.regexp.invaild": "用户名或密码格式错误",
+    "login.error.invaild": "用户名或密码错误",
+    "login.error.invaild.tip": "您是否注册了账户？",
+    "login.error.network": "网络错误，请稍后重试",
+    "login.success": "登录成功"
 }

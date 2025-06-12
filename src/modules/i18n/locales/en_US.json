@@ -18,5 +18,11 @@
     "account.goto.login": "Already have an account?",
     "account.button.goto.login": "Login now",
     "account.goto.forgot": "Forgot password?",
-    "account.button.goto.forgot": "Recovery now"
+    "account.button.goto.forgot": "Recovery now",
+    "login.error.empty": "Username or password cannot be empty",
+    "login.error.regexp.invaild": "Invalid username or password format",
+    "login.error.invaild": "Invalid username or password",
+    "login.error.invaild.tip": "Have you registered an account?",
+    "login.error.network": "Network error, please try again later",
+    "login.success": "Login successful"
 }
