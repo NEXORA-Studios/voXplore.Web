@@ -2,8 +2,7 @@
     import { watch } from "vue";
     import { RouterView } from "vue-router";
     import { useI18n } from "vue-i18n";
-    import Navigator from "@/components/Navigator.vue";
-    import HintControler from "./components/HintControler.vue";
+    import { InfiniteGrid, Navigator, HintController } from "@/components";
 
     // 一些监听器
     const { locale } = useI18n();
@@ -14,12 +13,16 @@
 
 <template>
     <Navigator />
-    <RouterView v-slot="{ Component }">
-        <Transition name="fade" mode="out-in">
-            <component :is="Component" />
-        </Transition>
-    </RouterView>
-    <HintControler />
+    <div class="hero min-h-screen">
+        <InfiniteGrid :size="128" :speed="2" />
+        <div class="hero-overlay"></div>
+        <RouterView v-slot="{ Component }">
+            <Transition name="fade" mode="out-in">
+                <component :is="Component" />
+            </Transition>
+        </RouterView>
+    </div>
+    <HintController />
 </template>
 
 <style lang="css" scoped>

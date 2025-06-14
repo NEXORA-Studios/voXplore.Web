@@ -1,9 +1,23 @@
 {
     "app.devhint": "voXplore is still in development!",
+
     "homeview.title": "Welcome to",
     "homeview.desp.1": "voXplore",
     "homeview.desp.3": "Developed by Jim Lin",
     "homeview.button.enter": "Enter App",
+
+    "pricing.title.standrad": "Standard",
+    "pricing.price.standrad": "$0/mo",
+    "pricing.features.standrad,1": "Basic Responding Speed",
+
+    "pricing.title.premium": "Premium",
+    "pricing.price.premium": "$5/mo",
+    "pricing.features.premium,1": "Faster Responding Speed",
+    "pricing.features.premium,2": "High-quality Analysis Results",
+
+    "pricing.button.current": "Current Plan",
+    "pricing.button.subscribe": "Subscribe",
+
     "account.legend.login": "Login to voXplore",
     "account.legend.register": "Regist on voXplore",
     "account.legend.forgot": "Forgot Password",
@@ -19,10 +33,29 @@
     "account.button.goto.login": "Login now",
     "account.goto.forgot": "Forgot password?",
     "account.button.goto.forgot": "Recovery now",
+
     "login.error.empty": "Username or password cannot be empty",
     "login.error.regexp.invaild": "Invalid username or password format",
     "login.error.invaild": "Invalid username or password",
     "login.error.invaild.tip": "Have you registered an account?",
     "login.error.network": "Network error, please try again later",
-    "login.success": "Login successful"
+    "login.success": "Login successful",
+
+    "dashboard.welcome": "Welcome back, {user}!",
+    "dashboard.stats.1.title": "Current Streak",
+    "dashboard.stats.1.desc": "days",
+    "dashboard.stats.2.title": "Total Points",
+    "dashboard.stats.2.desc": "points",
+    "dashboard.stats.3.title": "Current Level",
+    "dashboard.stats.3.value,1": "Seedling",
+    "dashboard.stats.3.value,2": "Explorer",
+    "dashboard.stats.3.value,3": "Pathfinder",
+    "dashboard.stats.3.value,4": "Builder",
+    "dashboard.stats.3.value,5": "Navigator",
+    "dashboard.stats.3.value,6": "Challenger",
+    "dashboard.stats.3.value,7": "Visionary",
+    "dashboard.stats.3.value,8": "Luminary",
+    "dashboard.stats.3.value,9": "Sage",
+    "dashboard.stats.3.desc": "Studied for {d} days!",
+    "dashboard.stats.4.title": "Weekly Goal"
 }

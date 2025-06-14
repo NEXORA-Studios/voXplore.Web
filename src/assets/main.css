@@ -8,6 +8,42 @@ img {
 
 @import "tailwindcss";
 
+@layer utilities {
+    /* 渐变色进度条扩展 */
+    .progress-gradient {
+        --progress-gradient: linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to));
+        --progress-gradient-bg: linear-gradient(
+            to right,
+            color-mix(in oklab, var(--tw-gradient-from) 20%, transparent),
+            color-mix(in oklab, var(--tw-gradient-to) 20%, transparent)
+        );
+        position: relative;
+        height: calc(0.25rem * 2);
+        width: 100%;
+        appearance: none;
+        overflow: hidden;
+        border-radius: var(--radius-box);
+        background-image: var(--progress-gradient-bg);
+        color: var(--color-base-content);
+    }
+    .progress-gradient::-webkit-progress-value {
+        background: var(--progress-gradient);
+    }
+    .progress-gradient::-moz-progress-bar {
+        background: var(--progress-gradient);
+    }
+
+    /* 卡片 hover 悬浮动画扩展 */
+    .card.card-hover {
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+    .card.card-hover:hover {
+        transform: translateY(calc(var(--spacing) * -1));
+        box-shadow: 0 calc(var(--spacing) * 1) calc(var(--spacing) * 2) 0
+            color-mix(in oklab, var(--color-base-content) 50%, transparent);
+    }
+}
+
 @plugin "@iconify/tailwind4";
 
 @plugin "daisyui" {
@@ -27,7 +63,7 @@ img {
     --color-base-content: oklch(21% 0.006 285.885);
     --color-primary: oklch(65.13% 0.144 248.47);
     --color-primary-content: oklch(13% 0.028 261.692);
-    --color-secondary: oklch(65.13% 0.144 257.98);
+    --color-secondary: oklch(65.13% 0.144 168.47);
     --color-secondary-content: oklch(13% 0.028 261.692);
     --color-accent: oklch(65.13% 0.144 277.21);
     --color-accent-content: oklch(13% 0.028 261.692);
@@ -63,7 +99,7 @@ img {
     --color-base-content: oklch(97.807% 0.029 256.847);
     --color-primary: oklch(0.5397 0.1435 248.47);
     --color-primary-content: oklch(97% 0.014 254.604);
-    --color-secondary: oklch(0.5397 0.1435 257.98);
+    --color-secondary: oklch(65.13% 0.144 168.47);
     --color-secondary-content: oklch(96% 0.018 272.314);
     --color-accent: oklch(0.5397 0.1435 277.21);
     --color-accent-content: oklch(96% 0.016 293.756);

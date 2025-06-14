@@ -6,8 +6,8 @@
 
     const { locale } = useI18n();
     const languages = ref([
-        { code: "zh_CN", name: "中文", icon: IconZh },
-        { code: "en_US", name: "English", icon: IconEnUs },
+        { code: "zh_CN", name: "简体中文（中国大陆）", icon: IconZh },
+        { code: "en_US", name: "English (Incomplete)", icon: IconEnUs },
     ]);
 
     const sortedLanguages = computed(() => {
