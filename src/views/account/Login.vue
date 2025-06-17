@@ -2,8 +2,8 @@
     import { ref } from "vue";
     import { useRouter } from "vue-router";
     import { useI18n } from "vue-i18n";
-    import { ApiRequester } from "@/modules/requester";
-    import { EventBus } from "@/modules/eventbus";
+    import { ApiRequester } from "@/modules/Requester";
+    import { EventBus } from "@/modules/Eventbus";
     import { useUserStore } from "@/modules/stores/user";
 
     const input_username = ref<HTMLInputElement>();
@@ -35,7 +35,7 @@
             });
             return;
         }
-        ApiRequester.post("/auth/login", { username, password })
+        ApiRequester.post("/api/auth/login", { username, password })
             .then((response) => {
                 EventBus.emit("hint:create", {
                     type: "success",

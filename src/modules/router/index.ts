@@ -18,6 +18,11 @@ const router = createRouter({
                     name: "Dashboard Panel",
                     component: () => import("@/views/panel/Dashboard.vue"),
                 },
+                {
+                    path: "learning",
+                    name: "Learning Panel",
+                    component: () => import("@/views/panel/Learning.vue"),
+                },
             ],
         },
         {

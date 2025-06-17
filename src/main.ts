@@ -17,4 +17,10 @@ app.use(pinia);
 app.use(router);
 app.use(i18n);
 
+// Load MockJS | Dev Only
+if (import.meta.env.DEV) {
+    await import("@/modules/mocks");
+    console.debug("🚧 MockJS is enabled, all requests will not be passed to backend.");
+}
+
 app.mount("#app");

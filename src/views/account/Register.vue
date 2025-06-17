@@ -1,8 +1,8 @@
 <script setup lang="ts">
     import { ref } from "vue";
     import { useRouter } from "vue-router";
-    import { ApiRequester } from "@/modules/requester";
-    import { EventBus } from "@/modules/eventbus";
+    import { ApiRequester } from "@/modules/Requester";
+    import { EventBus } from "@/modules/Eventbus";
 
     const input_username = ref<HTMLInputElement>();
     const input_email = ref<HTMLInputElement>();
@@ -33,7 +33,7 @@
             });
             return;
         }
-        ApiRequester.post("/auth/register", { username, email, password })
+        ApiRequester.post("/api/auth/register", { username, email, password })
             .then((_response) => {
                 EventBus.emit("hint:create", {
                     type: "success",

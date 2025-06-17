@@ -1,7 +1,7 @@
 <script setup lang="ts">
     import { ref } from "vue";
     import { useI18n } from "vue-i18n";
-    import { EventBus } from "@/modules/eventbus";
+    import { EventBus } from "@/modules/Eventbus";
     import type { HintConfig } from "@/types/Hint";
     import Hint from "@/components/Hint.vue";
 
@@ -9,7 +9,8 @@
     const hint_list = ref<HintConfig[]>([
         {
             type: "warning",
-            content: t("app.devhint"),
+            content: "app.devhint",
+            translate: true,
             infinite: true,
         },
     ]);
@@ -25,6 +26,7 @@
             v-for="el in hint_list"
             :key="el.content"
             :content="el.content"
+            :translate="el.translate"
             :type="el.type"
             :infinite="el.infinite"
             :time="el.time" />

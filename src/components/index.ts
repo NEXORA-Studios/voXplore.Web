@@ -2,6 +2,7 @@ export { default as Hint } from "./Hint.vue";
 export { default as HintController } from "./HintController.vue";
 export { default as InfiniteGrid } from "./InfiniteGrid.vue";
 export { default as Navigator } from "./Navigator.vue";
+export { default as ThemeController } from "./ThemeController.vue";
 
 // Icons
 export { default as IconTick } from "./IconTick.vue";

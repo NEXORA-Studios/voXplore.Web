@@ -45,7 +45,9 @@
                         </li>
                     </ul>
                     <div class="mt-6">
-                        <button class="btn btn-primary btn-block">{{ $t("pricing.button.subscribe") }}</button>
+                        <button class="btn bg-gradient-to-br from-primary to-secondary text-base-100 btn-block">
+                            {{ $t("pricing.button.subscribe") }}
+                        </button>
                     </div>
                 </div>
             </div>

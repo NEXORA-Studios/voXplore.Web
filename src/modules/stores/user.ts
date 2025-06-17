@@ -1,7 +1,5 @@
 import { defineStore } from "pinia";
-import { decodeJwt } from "@/modules/jwt";
-import { ApiRequester } from "@/modules/requester";
-import { EventBus } from "@/modules/eventbus";
+import { Jwt } from "@/modules/Jwt";
 
 export const useUserStore = defineStore("user", {
     state: () => ({
@@ -16,7 +14,7 @@ export const useUserStore = defineStore("user", {
     },
     actions: {
         login(params: { user_id: number; username: string; token: string; role: number }) {
-            const jwtContent = decodeJwt(params.token);
+            const jwtContent = Jwt.decodeJwt(params.token);
             if (jwtContent["user_id"] !== params.user_id) {
                 throw new Error("JWT does not match user.id");
             }
@@ -26,7 +24,7 @@ export const useUserStore = defineStore("user", {
             this.role = params.role;
         },
         setJwt(token: string) {
-            const jwtContent = decodeJwt(token);
+            const jwtContent = Jwt.decodeJwt(token);
             if (jwtContent["user_id"] !== this.id) {
                 throw new Error("JWT does not match user.id");
             }
