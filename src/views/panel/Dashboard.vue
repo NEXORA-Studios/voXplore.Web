@@ -165,7 +165,9 @@
                             </span>
                         </section>
                     </section>
-                    <button class="btn bg-gradient-to-br from-primary to-secondary text-white mt-auto">
+                    <button
+                        class="btn bg-gradient-to-br from-primary to-secondary text-white mt-auto"
+                        @click="$router.push('/panel/learning')">
                         <i class="icon-[material-symbols--play-arrow-outline-rounded] size-6 -ml-2"></i>
                         {{ $t("dashboard.main.button") }}
                     </button>

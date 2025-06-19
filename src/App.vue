@@ -3,6 +3,7 @@
     import { RouterView } from "vue-router";
     import { useI18n } from "vue-i18n";
     import { ThemeController, InfiniteGrid, Navigator, HintController } from "@/components";
+import Watermark from "./components/Watermark.vue";
 
     // 一些监听器
     const { locale } = useI18n();
@@ -24,6 +25,7 @@
         </RouterView>
     </div>
     <HintController />
+    <Watermark />
 </template>
 
 <style lang="css" scoped>

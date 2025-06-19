@@ -1,19 +1,10 @@
 <script setup lang="ts">
     import { ref } from "vue";
-    import { useI18n } from "vue-i18n";
     import { EventBus } from "@/modules/Eventbus";
     import type { HintConfig } from "@/types/Hint";
     import Hint from "@/components/Hint.vue";
 
-    const { t } = useI18n();
-    const hint_list = ref<HintConfig[]>([
-        {
-            type: "warning",
-            content: "app.devhint",
-            translate: true,
-            infinite: true,
-        },
-    ]);
+    const hint_list = ref<HintConfig[]>();
 
     EventBus.on("hint:create", (payload: HintConfig) => {
         hint_list.value?.push(payload);

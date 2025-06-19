@@ -52,6 +52,17 @@ const router = createRouter({
             name: "Pricing",
             component: () => import("@/views/Pricing.vue"),
         },
+        {
+            path: "/debug",
+            name: "Debugging Components",
+            children: [
+                {
+                    path: "learn-control",
+                    name: "Learn Control",
+                    component: () => import("@/components/LearnControl.vue"),
+                },
+            ],
+        },
     ],
 });
 

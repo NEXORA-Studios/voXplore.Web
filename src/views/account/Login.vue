@@ -39,7 +39,8 @@
             .then((response) => {
                 EventBus.emit("hint:create", {
                     type: "success",
-                    content: t("login.success"),
+                    content: "login.success.tip",
+                    translate: true,
                 });
                 // @ts-ignore
                 userStore.login(response.data);
@@ -50,14 +51,16 @@
                     case 404:
                         EventBus.emit("hint:create", {
                             type: "info",
-                            content: t("login.error.invaild.tip"),
+                            content: "login.error.invaild.tip",
+                            translate: true,
                         });
                     // ! NO BREAK HERE !
                     // Fall-through for main error hint.
                     case 401:
                         EventBus.emit("hint:create", {
                             type: "error",
-                            content: t("login.error.invaild"),
+                            content: "login.error.invaild.tip",
+                            translate: true,
                         });
                         break;
                     default:

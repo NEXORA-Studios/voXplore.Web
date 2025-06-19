@@ -1,3 +1,5 @@
+
+
 export interface MockRoute {
     url: string | RegExp;
     method?: "get" | "post" | "put" | "delete";

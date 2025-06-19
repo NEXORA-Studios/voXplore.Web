@@ -1,6 +1,7 @@
 export default {
     // path:#global
-    "app.devhint": "voXplore is still in development!",
+    "app.watermark,1": "Demo Version Notice",
+    "app.watermark,2": "voXplore is currently running in Demo Mode. Some features may be limited or disabled.",
     "app.desp": "Explore More Vocabularies",
 
     // path:@/components/Navigator.vue
@@ -93,4 +94,45 @@ export default {
     "dashboard.moreopt.button,1": "Archivements",
     "dashboard.moreopt.button,2": "Goals",
     "dashboard.moreopt.button,3": "Settings",
+
+    // path:@/view/panel/Learning.vue
+    // Master Texts
+    "learning.main.title": "Vocabulary Builder",
+    "learning.main.desp": "Expand your English vocabulary with interactive questions",
+    // (Main Card) Texts
+    "learning.maincard.title": "Practice",
+    "learning.maincard.aideciding": "AI is deciding your next word...",
+    // (R1 Card) Text
+    "learning.stats.title": "Progress Stats",
+    "learning.stats.wordlearned": "Words Learned",
+    "learning.stats.level": "Level",
+    "learning.stats.questionid": "Question ID",
+    "learning.stats.reviewafter": "Review After",
+    "learning.stats.reviewafter.data": "{w} words",
+    "learning.stats.masteryrate": "Mastery Rate",
+    // (R2 Card) Text & Buttons
+    "learning.quickactions.title": "Quick Actions",
+    "learning.quickactions.button,1": "Visit Review Center",
+    "learning.quickactions.button,2": "View Bookmarks",
+
+    // path:@/components/LearningControl.vue
+    // General
+    "learning.control.button.clickhere": "Click Here",
+    // Step1
+    "learning.control.button.hard": "Hard",
+    "learning.control.button.medium": "Medium",
+    "learning.control.button.easy": "Easy",
+    "learning.control.ignore,1": "Want to Ignore This Word FOREVER?",
+    "learning.control.ignore,2": "or press",
+    // Step 2
+    "learning.control.step2.title": "Try to Spell It",
+    "learning.control.step2.desp,1": "or",
+    "learning.control.step2.desp,2": "for hint",
+    "learning.control.button.check": "Check",
+    "learning.control.hint.incorrect": "Wrong. The word is ",
+    "learning.control.hint.correct": "Correct!",
+    // Step 3
+    "learning.control.step3.title": "How do you memorize this?",
+    "learning.control.step3.desp": "Your idea will help both you and others later.",
+    "learning.control.step3.button": "Submit",
 };

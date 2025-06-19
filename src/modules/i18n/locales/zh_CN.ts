@@ -1,6 +1,7 @@
 export default {
     // path:#global
-    "app.devhint": "voXplore 仍在开发中！",
+    "app.watermark,1": "演示版提示",
+    "app.watermark,2": "voXplore 当前处于演示模式，部分功能可能无法使用",
     "app.desp": "探索更多英语词汇",
 
     // path:@/components/Navigator.vue
@@ -93,4 +94,45 @@ export default {
     "dashboard.moreopt.button,1": "成就",
     "dashboard.moreopt.button,2": "目标",
     "dashboard.moreopt.button,3": "设置",
+
+    // path:@/view/panel/Learning.vue
+    // Master Texts
+    "learning.main.title": "Vocabulary Builder",
+    "learning.main.desp": "通过互动问题拓展你的英语词汇量",
+    // (Main Card) Texts
+    "learning.maincard.title": "开始练习",
+    "learning.maincard.aideciding": "AI 大模型正在决定您的下一个单词...",
+    // (R1 Card) Text
+    "learning.stats.title": "学习统计",
+    "learning.stats.wordlearned": "已学单词",
+    "learning.stats.level": "当前等级",
+    "learning.stats.questionid": "题目编号",
+    "learning.stats.reviewafter": "复习计划",
+    "learning.stats.reviewafter.data": "{w} 个单词后",
+    "learning.stats.masteryrate": "掌握率",
+    // (R2 Card) Text & Buttons
+    "learning.quickactions.title": "快速操作",
+    "learning.quickactions.button,1": "前往复习中心",
+    "learning.quickactions.button,2": "查看书签",
+
+    // path:@/components/LearningControl.vue
+    // General
+    "learning.control.button.clickhere": "点击此处",
+    // Step1
+    "learning.control.button.hard": "困难",
+    "learning.control.button.medium": "一般",
+    "learning.control.button.easy": "容易",
+    "learning.control.ignore,1": "要永久忽略这个单词吗？",
+    "learning.control.ignore,2": "或按下",
+    // Step 2
+    "learning.control.step2.title": "试着拼写出来",
+    "learning.control.step2.desp,1": "或者",
+    "learning.control.step2.desp,2": "查看提示",
+    "learning.control.button.check": "检查",
+    "learning.control.hint.incorrect": "错误，正确答案是 ",
+    "learning.control.hint.correct": "答对了！",
+    // Step 3
+    "learning.control.step3.title": "你是如何记住这个词的?",
+    "learning.control.step3.desp": "你的方法将帮助你和其他人更好地记忆",
+    "learning.control.step3.button": "提交",
 };
