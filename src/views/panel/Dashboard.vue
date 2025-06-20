@@ -190,7 +190,9 @@
                             <p v-if="daily_word_def.length > 3">...</p>
                         </section>
                     </section>
-                    <button class="btn bg-gradient-to-br from-primary to-secondary text-white">
+                    <button
+                        class="btn bg-gradient-to-br from-primary to-secondary text-white"
+                        @click="$router.push('/panel/learndaily')">
                         <i class="icon-[material-symbols--play-arrow-outline-rounded] size-6 -ml-2"></i>
                         {{ $t("dashboard.daily.button") }}
                     </button>
@@ -203,9 +205,15 @@
                         <h1 class="text-xl">{{ $t("dashboard.moreopt.title") }}</h1>
                     </section>
                     <section class="flex flex-col gap-2 my-auto">
-                        <button class="btn">{{ $t("dashboard.moreopt.button,1") }}</button>
-                        <button class="btn">{{ $t("dashboard.moreopt.button,2") }}</button>
-                        <button class="btn">{{ $t("dashboard.moreopt.button,3") }}</button>
+                        <button class="btn" @click="$router.push('/personal/archivements')">
+                            {{ $t("dashboard.moreopt.button,1") }}
+                        </button>
+                        <button class="btn" @click="$router.push('/personal/goals')">
+                            {{ $t("dashboard.moreopt.button,2") }}
+                        </button>
+                        <button class="btn" @click="$router.push('/settings')">
+                            {{ $t("dashboard.moreopt.button,3") }}
+                        </button>
                     </section>
                 </div>
             </div>

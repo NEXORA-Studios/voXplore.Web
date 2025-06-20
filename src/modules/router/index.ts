@@ -53,15 +53,20 @@ const router = createRouter({
             component: () => import("@/views/Pricing.vue"),
         },
         {
-            path: "/debug",
-            name: "Debugging Components",
+            path: "/error",
+            name: "Error",
+            redirect: "/error/404",
             children: [
                 {
-                    path: "learn-control",
-                    name: "Learn Control",
-                    component: () => import("@/components/LearnControl.vue"),
+                    path: "404",
+                    name: "404 Not Found",
+                    component: () => import("@/views/error/404.vue"),
                 },
             ],
+        },
+        {
+            path: "/:pathMatch(.*)*",
+            redirect: "/error/404",
         },
     ],
 });

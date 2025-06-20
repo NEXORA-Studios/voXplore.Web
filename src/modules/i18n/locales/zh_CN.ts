@@ -142,4 +142,10 @@ export default {
     "learning.control.step3.title": "你是如何记住这个词的?",
     "learning.control.step3.desp": "你的方法将帮助你和其他人更好地记忆",
     "learning.control.step3.button": "提交",
+
+    // path:@/views/error/404.vue
+    "404.title": "你迷失在了词海之中...",
+    "404.desp": "未找到您所请求的页面",
+    "404.button.back": "返回上一页",
+    "404.button.home": "返回首页",
 };

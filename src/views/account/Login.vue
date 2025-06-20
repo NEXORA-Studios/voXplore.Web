@@ -39,7 +39,7 @@
             .then((response) => {
                 EventBus.emit("hint:create", {
                     type: "success",
-                    content: "login.success.tip",
+                    content: "login.success",
                     translate: true,
                 });
                 // @ts-ignore
@@ -59,7 +59,7 @@
                     case 401:
                         EventBus.emit("hint:create", {
                             type: "error",
-                            content: "login.error.invaild.tip",
+                            content: "login.error.invaild",
                             translate: true,
                         });
                         break;
@@ -76,7 +76,7 @@
 
 <template>
     <div class="hero-content text-base-content text-left">
-        <div class="card w-96 bg-base-100 card-md shadow-sm">
+        <div class="card w-96 bg-base-100 card-md shadow-sm border border-base-content/25">
             <div class="card-body">
                 <h2 class="text-2xl text-center">{{ $t("account.legend.login") }}</h2>
                 <fieldset class="fieldset mt-2">

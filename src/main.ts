@@ -18,7 +18,7 @@ app.use(router);
 app.use(i18n);
 
 // Load MockJS | Dev Only
-if (import.meta.env.DEV) {
+if (import.meta.env.DEV || import.meta.env["VITE_USE_MOCK"]) {
     await import("@/modules/mocks");
     console.debug("🚧 MockJS is enabled, all requests will not be passed to backend.");
 }

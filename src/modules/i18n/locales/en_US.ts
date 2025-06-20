@@ -68,6 +68,13 @@ export default {
     "login.error.network": "Network error, please try again later",
     "login.success": "Login successful",
 
+    // path:@/views/account/Register.vue
+    // Register Hints
+    "register.error.empty": "Username, Email or Password cannot be empty.",
+    "register.error.regexp.invaild": "Email or Password is invalid.",
+    "register.error.conflict": "The account with these credentials is already registed!",
+    "register.success": "Register successful! Now you can login with your account.",
+
     // path:@/view/panel/Dashboard.vue
     "dashboard.welcome": "Welcome back, {user}!",
     // (Top Cards) Titles
@@ -142,4 +149,10 @@ export default {
     "learning.control.step3.title": "How do you memorize this?",
     "learning.control.step3.desp": "Your idea will help both you and others later.",
     "learning.control.step3.button": "Submit",
+
+    // path:@/views/error/404.vue
+    "404.title": "You've Lost Yourself in the Sea of Vocabularies...",
+    "404.desp": "We couldn't find the page you're looking for.",
+    "404.button.back": "Go Back",
+    "404.button.home": "Go Home",
 };

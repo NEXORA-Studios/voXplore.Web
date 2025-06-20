@@ -22,14 +22,16 @@
         if (!username || !email || !password) {
             EventBus.emit("hint:create", {
                 type: "error",
-                content: "Username, Email or Password cannot be empty.",
+                content: "register.error.empty",
+                translate: true,
             });
             return;
         }
         if (email_regexp.test(email) === false || password_regexp.test(password) === false) {
             EventBus.emit("hint:create", {
                 type: "error",
-                content: "Email or Password is invalid.",
+                content: "register.error.regexp.invaild",
+                translate: true,
             });
             return;
         }
@@ -37,7 +39,8 @@
             .then((_response) => {
                 EventBus.emit("hint:create", {
                     type: "success",
-                    content: "Register successful! Now you can login with your account.",
+                    content: "register.success",
+                    translate: true,
                 });
                 router.push("/account/login");
             })
@@ -45,7 +48,8 @@
                 if (ex.response?.status === 409) {
                     EventBus.emit("hint:create", {
                         type: "error",
-                        content: "The account with these credentials is already registed!",
+                        content: "register.error.conflict",
+                        translate: true,
                     });
                 }
                 console.error(ex);
@@ -59,7 +63,7 @@
 
 <template>
     <div class="hero-content text-base-content text-left">
-        <div class="card w-96 bg-base-100 card-md shadow-sm">
+        <div class="card w-96 bg-base-100 card-md shadow-sm border border-base-content/25">
             <div class="card-body">
                 <h2 class="text-2xl text-center">{{ $t("account.legend.register") }}</h2>
                 <fieldset class="fieldset mt-2">
