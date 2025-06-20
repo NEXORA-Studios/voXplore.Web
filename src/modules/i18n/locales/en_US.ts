@@ -1,8 +1,12 @@
 export default {
     // path:#global
+    "app.desp": "Explore More Vocabularies",
     "app.watermark,1": "Demo Version Notice",
     "app.watermark,2": "voXplore is currently running in Demo Mode. Some features may be limited or disabled.",
-    "app.desp": "Explore More Vocabularies",
+    "app.demonomobile.title": "Demo Version Notice",
+    "app.demonomobile.desp": "Mobile Version is not supporting while voXplore is running under Demo Mode.",
+    "app.demonomobile.hint.tablet": "If you are using tablet please rotate it to landscape mode.",
+    "app.demonomobile.hint.mobile": "If you are using mobile please switch to desktop device.",
 
     // path:@/components/Navigator.vue
     // Themes
@@ -17,6 +21,9 @@ export default {
     "homeview.button.enter": "Enter App",
 
     // path:@/views/Pricing.vue
+    // Tags
+    "pricing.tag.current": "Current Plan",
+    "pricing.tag.mostpopular": "Most Popular",
     // Standrad
     "pricing.title.standrad": "Standard",
     "pricing.price.standrad": "$0/mo",

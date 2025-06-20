@@ -1,6 +1,6 @@
 <script setup lang="ts">
-    import { computed, nextTick, ref } from "vue";
-    import LearnControl from "@/components/LearnControl.vue";
+    import { computed, ref } from "vue";
+    import { LearnControl } from "@/components";
     import { B1Vocabs } from "@/modules/mock-db";
 
     const lc = ref<typeof LearnControl>();

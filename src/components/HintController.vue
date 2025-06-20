@@ -2,7 +2,7 @@
     import { ref } from "vue";
     import { EventBus } from "@/modules/Eventbus";
     import type { HintConfig } from "@/types/Hint";
-    import Hint from "@/components/Hint.vue";
+    import { Hint } from "@/components";
 
     const hint_list = ref<HintConfig[]>([]);
 

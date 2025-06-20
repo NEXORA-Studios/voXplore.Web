@@ -1,8 +1,12 @@
 export default {
     // path:#global
+    "app.desp": "探索更多英语词汇",
     "app.watermark,1": "演示版提示",
     "app.watermark,2": "voXplore 当前处于演示模式，部分功能可能无法使用",
-    "app.desp": "探索更多英语词汇",
+    "app.demonomobile.title": "演示版提示",
+    "app.demonomobile.desp": "演示版不支持移动端访问",
+    "app.demonomobile.hint.tablet": "如果您使用的是平板，请切换到横屏模式",
+    "app.demonomobile.hint.mobile": "如果您使用的是手机，请切换到桌面设备",
 
     // path:@/components/Navigator.vue
     // Themes
@@ -17,6 +21,9 @@ export default {
     "homeview.button.enter": "进入应用",
 
     // path:@/views/Pricing.vue
+    // Tags
+    "pricing.tag.current": "当前套餐",
+    "pricing.tag.mostpopular": "最受欢迎",
     // Standrad
     "pricing.title.standrad": "标准版",
     "pricing.price.standrad": "0 元/月",

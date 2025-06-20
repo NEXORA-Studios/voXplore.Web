@@ -1,12 +1,9 @@
 <script setup lang="ts">
-    import { useI18n } from "vue-i18n";
     import { IconTick } from "@/components";
 
-    const { t } = useI18n();
-
     const features = {
-        standrad: [t("pricing.features.standrad,1")],
-        premium: [t("pricing.features.premium,1"), t("pricing.features.premium,2")],
+        standrad: ["pricing.features.standrad,1"],
+        premium: ["pricing.features.premium,1", "pricing.features.premium,2"],
     };
 </script>
 
@@ -15,7 +12,9 @@
         <div class="xl:flex gap-4">
             <div class="card w-96 bg-base-100 shadow-sm">
                 <div class="card-body">
-                    <span class="badge badge-xs badge-success badge-dash">Current Plan</span>
+                    <span class="badge badge-xs badge-success badge-dash">
+                        <span class="translate-y-0.5">{{ $t("pricing.tag.current") }}</span>
+                    </span>
                     <div class="flex justify-between">
                         <h2 class="text-3xl font-bold">{{ $t("pricing.title.standrad") }}</h2>
                         <span class="text-xl">{{ $t("pricing.price.standrad") }}</span>
@@ -23,7 +22,7 @@
                     <ul class="mt-6 flex flex-col gap-2 text-xs mb-auto">
                         <li v-for="feature in features.standrad">
                             <IconTick class="inline-block text-success" />
-                            <span>{{ feature }}</span>
+                            <span>{{ $t(feature) }}</span>
                         </li>
                     </ul>
                     <div class="mt-6">
@@ -33,7 +32,9 @@
             </div>
             <div class="card w-96 bg-base-100 shadow-sm">
                 <div class="card-body">
-                    <span class="badge badge-xs badge-warning">Most Popular</span>
+                    <span class="badge badge-xs badge-warning">
+                        <span class="translate-y-0.5">{{ $t("pricing.tag.mostpopular") }}</span>
+                    </span>
                     <div class="flex justify-between">
                         <h2 class="text-3xl font-bold">{{ $t("pricing.title.premium") }}</h2>
                         <span class="text-xl">{{ $t("pricing.price.premium") }}</span>
@@ -41,7 +42,7 @@
                     <ul class="mt-6 flex flex-col gap-2 text-xs">
                         <li v-for="feature in features.premium">
                             <IconTick class="inline-block text-success" />
-                            <span>{{ feature }}</span>
+                            <span>{{ $t(feature) }}</span>
                         </li>
                     </ul>
                     <div class="mt-6">
