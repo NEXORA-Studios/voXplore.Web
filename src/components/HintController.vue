@@ -4,7 +4,7 @@
     import type { HintConfig } from "@/types/Hint";
     import Hint from "@/components/Hint.vue";
 
-    const hint_list = ref<HintConfig[]>();
+    const hint_list = ref<HintConfig[]>([]);
 
     EventBus.on("hint:create", (payload: HintConfig) => {
         hint_list.value?.push(payload);
